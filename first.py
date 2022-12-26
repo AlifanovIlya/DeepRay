@@ -1,80 +1,158 @@
-def next_message():
-	input_key = input('***Что бы увидеть следующее сообщение, нажми клавишу "Enter"***\n')
+def nextMessage():
+	input_key = input('\n***Что бы увидеть следующее сообщение, нажми клавишу "Enter"***\n')
 
 	while input_key != '':
-		print('*** Это какая-то другая клавиша! ***\n')
-		input_key = input('*** Что бы увидеть следующее сообщение, нажми клавишу "Enter" ***\n')
+		print('\n*** Это какая-то другая клавиша! ***\n')
+		input_key = input('\n*** Что бы увидеть следующее сообщение, нажми клавишу "Enter" ***\n')
 
-def character_direction(character_direction_choice):
-	for i in character_direction_choice:
-		if i == 'Ю' or i == 'ю':
-			return('South')
-			break
-		if i == 'С' or i == 'с':
-			return('North')
-			break
-		if i == 'З' or i == 'з':
-			return('West')
-			break
-		if i == 'В' or i == 'в':
-			return('East')
-			break
+def choseCharacter():
+	def characterRita():
+		name = 'Рита Янг'
+		role = 'Спортсменка'
+		health = 9
+		force = 5
+		agility = 4
+		attention = 3
+		knowledge = 3
+		communication = 2
+		will = 4
+		print(f'Рита Янг\n Спортсменка\n Здоровье = {health}\n Сила = {force}\n Ловкость = {agility}\n Внимание = {attention}\n Знания = {knowledge}\n Общение = {communication}\n Воля = {will}')
 
-def character_class(character_class_choise):
-	for i in character_class_choise:
-		if i == 'М' or i == 'м':
-			#for j in character_class_choise:
-				#if j == 'Ч' or i == 'ч':
-			return('Swordman')
-			break
-		if i == 'Л' or i == 'л':
-			return('Bowner')
-			break
-		if i == 'Г' or i == 'Г':
-			return('Mage')
-			break
+	def characterKarson():
+		name = 'Карсон Синклер'
+		role = 'Дворецкий'
+		health = 8
+		force = 3
+		agility = 2
+		attention = 5
+		knowledge = 4
+		communication = 4
+		will = 3
+		print(f'Карсон Синклер\n Дворецкий\n Здоровье = {health}\n Сила = {force}\n Ловкость = {agility}\n Внимание = {attention}\n Знания = {knowledge}\n Общение = {communication}\n Воля = {will}')
 
-def inventory_update():
-	print('*** Инвентарь обновлен! ***\n')
+	def characterAgata():
+		name = 'Агата Крейн'
+		role = 'Парапсихолог'
+		health = 5
+		force = 2
+		agility = 3
+		attention = 4
+		knowledge = 5
+		communication = 3
+		will = 4
+		print(f'Агата Крейн\n Парапсихолог\n Здоровье = {health}\n Сила = {force}\n Ловкость = {agility}\n Внимание = {attention}\n Знания = {knowledge}\n Общение = {communication}\n Воля = {will}')
 
-print('Проснулся наконец? Я думал, ты уже не встанешь.\n')
+	def characterVendi():
+		name = 'Венди Адамс'
+		role = 'Беспризорница'
+		health = 6
+		force = 3
+		agility = 5
+		attention = 4
+		knowledge = 3
+		communication = 3
+		will = 3
+		print(f'Венди Адамс\n Беспризорница\n Здоровье = {health}\n Сила = {force}\n Ловкость = {agility}\n Внимание = {attention}\n Знания = {knowledge}\n Общение = {communication}\n Воля = {will}')
 
-next_message()
+	def characterPreston():
+		name = 'Престон Фэрмонт'
+		role = 'Миллионер'
+		health = 8
+		force = 4
+		agility = 4
+		attention = 3
+		knowledge = 2
+		communication = 5
+		will = 3
+		print(f'Пестон Фэрмонт\n Миллионер\n Здоровье = {health}\n Сила = {force}\n Ловкость = {agility}\n Внимание = {attention}\n Знания = {knowledge}\n Общение = {communication}\n Воля = {will}')
 
-character__started_local = input('Привет, из какого ты города?\n')
-print(character__started_local + '? Не слышал о таких местах.\n')
+	def characterMin():
+		name = 'Минь Тхи Фанг'
+		role = 'Серкетарша'
+		health = 7
+		force = 3
+		agility = 4
+		attention = 4
+		knowledge = 3
+		communication = 4
+		will = 3
+		print(f'Минь Тхи Фанг\n Серкетарша\n Здоровье = {health}\n Сила = {force}\n Ловкость = {agility}\n Внимание = {attention}\n Знания = {knowledge}\n Общение = {communication}\n Воля = {will}')
 
-character_name = input('А как зовут тебя, помнишь?\n')
-print('Рад знакомству, ' + character_name + ' из ' + character__started_local + '\n')
+	def characterUilyam():
+		name = 'Уильям Йорик'
+		role = 'Могильщик'
+		health = 7
+		force = 4
+		agility = 3
+		attention = 4
+		knowledge = 3
+		communication = 3
+		will = 4
+		print(f'Уильям Йорик\n Могильщик\n Здоровье = {health}\n Сила = {force}\n Ловкость = {agility}\n Внимание = {attention}\n Знания = {knowledge}\n Общение = {communication}\n Воля = {will}')
 
-next_message()
+	def characterMateo():
+		name = 'Отец Матео'
+		role = 'Священник'
+		health = 6
+		force = 3
+		agility = 3
+		attention = 2
+		knowledge = 4
+		communication = 4
+		will = 5
+		print(f'Отец Матео\n Священник\n Здоровье = {health}\n Сила = {force}\n Ловкость = {agility}\n Внимание = {attention}\n Знания = {knowledge}\n Общение = {communication}\n Воля = {will}')
 
-character_direction_first_choise = input('Куда ты хочешь пойти? На Юг? Север? Запад или Восток?\n')
-if character_direction(character_direction_first_choise) == 'South':
-	print('О, это нам по пути!\n')
-elif character_direction(character_direction_first_choise) == 'North':
-	print('Интереный выбор, но там холодно!\n')
-elif character_direction(character_direction_first_choise) == 'West':
-	print('Хорошо, можно и туда.\n')
-elif character_direction(character_direction_first_choise) == 'East':
-	print('Ладно, ступай своей дорогой.\n')
-else:
-	print('Я тебя не понимаюю\n')
+	characterRita()
 
-next_message()
+	nextMessage()
 
-character_class_first_choise = input('Какой класс ты хочешь выбрать?.\n')
-if character_class(character_class_first_choise) == 'Swordman':
-	print('Ммм, любишь помахать большой железной штукой? Ну держи, пригодиться.\n')
-	inventory_update()
-	print('*** +1 Старый меч. ***\n')
-elif character_class(character_class_first_choise) == 'Bowner':
-	print('Любитель поразить цель издалека? Вот, держи, он доольно не плох.\n')
-	inventory_update()
-	print('*** +1 Длинный деревянный Лук. ***\n')
-elif character_class(character_class_first_choise) == 'Mage':
-	print('Так ты предпочитаешь решать проблемы "словами"? Вот тебе книжка с заклинаниями.\n')
-	inventory_update()
-	print('*** +1 Старый альмонах ***\n')
-else:
-	print('Странный класс, мне нечего тебе предложить.\n')
+	characterKarson()
+
+	nextMessage()
+
+	characterAgata()
+
+	nextMessage()
+
+	characterVendi()
+
+	nextMessage()
+
+	characterPreston()
+
+	nextMessage()
+
+	characterMin()
+
+	nextMessage()
+
+	characterUilyam()
+
+	nextMessage()
+
+	characterMateo()
+
+
+
+
+
+
+def main():
+	print('Привет, сыщик! Ты в особняке безумия, и тебе необходимо, ты не поверишь, найти! А вот что найти, это тебе предстоит узнать.')
+
+	nextMessage()
+
+	print('Выбери героя, за которого хочешь играть. Но сначала посмотри на всех.')
+
+	nextMessage()
+
+	choseCharacter()
+
+	nextMessage()
+
+	mainCharacter = input('Впиши полное имя персонажа, которого хочешь выбрать')
+
+
+
+
+main()
