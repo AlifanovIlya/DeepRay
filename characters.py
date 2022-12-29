@@ -196,8 +196,118 @@ def lookAtCharacters():
 
 	characterMateo()
 
-def charactersSpecials(mainCharacterName, special):
+ #Проверка характеристик при каком-то действии
+
+def charactersSpecialsCheck(mainCharacterName, special):
 	if mainCharacterName == 'Рита Янг' and special == 'health':
 		return 9
 	elif mainCharacterName == 'Рита Янг' and special == 'force':
+		return 5
+	elif mainCharacterName == 'Рита Янг' and special == 'agility':
+		return 4
+	elif mainCharacterName == 'Рита Янг' and special == 'attention':
+		return 3
+	elif mainCharacterName == 'Рита Янг' and special == 'knowledge':
+		return 3
+	elif mainCharacterName == 'Рита Янг' and special == 'communication':
+		return 2
+	elif mainCharacterName == 'Рита Янг' and special == 'will':
+		return 4
+	elif mainCharacterName == 'Карсон Синклер' and special == 'health':
+		return 8
+	elif mainCharacterName == 'Карсон Синклер' and special == 'force':
+		return 3
+	elif mainCharacterName == 'Карсон Синклер' and special == 'agility':
+		return 2
+	elif mainCharacterName == 'Карсон Синклер' and special == 'attention':
+		return 5
+	elif mainCharacterName == 'Карсон Синклер' and special == 'knowledge':
+		return 4
+	elif mainCharacterName == 'Карсон Синклер' and special == 'communication':
+		return 4
+	elif mainCharacterName == 'Карсон Синклер' and special == 'will':
+		return 3
+	elif mainCharacterName == 'Агата Крейн' and special == 'health':
+		return 5
+	elif mainCharacterName == 'Агата Крейн' and special == 'force':
+		return 2
+	elif mainCharacterName == 'Агата Крейн' and special == 'agility':
+		return 3
+	elif mainCharacterName == 'Агата Крейн' and special == 'attention':
+		return 4
+	elif mainCharacterName == 'Агата Крейн' and special == 'knowledge':
+		return 5
+	elif mainCharacterName == 'Агата Крейн' and special == 'communication':
+		return 3
+	elif mainCharacterName == 'Агата Крейн' and special == 'will':
+		return 4
+	elif mainCharacterName == 'Венди Адамс' and special == 'health':
+		return 6
+	elif mainCharacterName == 'Венди Адамс' and special == 'force':
+		return 3
+	elif mainCharacterName == 'Венди Адамс' and special == 'agility':
+		return 5
+	elif mainCharacterName == 'Венди Адамс' and special == 'attention':
+		return 4
+	elif mainCharacterName == 'Венди Адамс' and special == 'knowledge':
+		return 3
+	elif mainCharacterName == 'Венди Адамс' and special == 'communication':
+		return 3
+	elif mainCharacterName == 'Венди Адамс' and special == 'will':
+		return 3
+	elif mainCharacterName == 'Престон Фэрмонт' and special == 'health':
+		return 8
+	elif mainCharacterName == 'Престон Фэрмонт' and special == 'force':
+		return 4
+	elif mainCharacterName == 'Престон Фэрмонт' and special == 'agility':
+		return 4
+	elif mainCharacterName == 'Престон Фэрмонт' and special == 'attention':
+		return 3
+	elif mainCharacterName == 'Престон Фэрмонт' and special == 'knowledge':
+		return 2
+	elif mainCharacterName == 'Престон Фэрмонт' and special == 'communication':
+		return 5
+	elif mainCharacterName == 'Престон Фэрмонт' and special == 'will':
+		return 3
+	elif mainCharacterName == 'Минь Тхи Фанг' and special == 'health':
+		return 7
+	elif mainCharacterName == 'Минь Тхи Фанг' and special == 'force':
+		return 3
+	elif mainCharacterName == 'Минь Тхи Фанг' and special == 'agility':
+		return 4
+	elif mainCharacterName == 'Минь Тхи Фанг' and special == 'attention':
+		return 4
+	elif mainCharacterName == 'Минь Тхи Фанг' and special == 'knowledge':
+		return 3
+	elif mainCharacterName == 'Минь Тхи Фанг' and special == 'communication':
+		return 4
+	elif mainCharacterName == 'Минь Тхи Фанг' and special == 'will':
+		return 3
+	elif mainCharacterName == 'Уильям Йорик' and special == 'health':
+		return 7
+	elif mainCharacterName == 'Уильям Йорик' and special == 'force':
+		return 4
+	elif mainCharacterName == 'Уильям Йорик' and special == 'agility':
+		return 3
+	elif mainCharacterName == 'Уильям Йорик' and special == 'attention':
+		return 4
+	elif mainCharacterName == 'Уильям Йорик' and special == 'knowledge':
+		return 3
+	elif mainCharacterName == 'Уильям Йорик' and special == 'communication':
+		return 3
+	elif mainCharacterName == 'Уильям Йорик' and special == 'will':
+		return 4
+	elif mainCharacterName == 'Отец Матео' and special == 'health':
+		return 6
+	elif mainCharacterName == 'Отец Матео' and special == 'force':
+		return 3
+	elif mainCharacterName == 'Отец Матео' and special == 'agility':
+		return 3
+	elif mainCharacterName == 'Отец Матео' and special == 'attention':
+		return 2
+	elif mainCharacterName == 'Отец Матео' and special == 'knowledge':
+		return 4
+	elif mainCharacterName == 'Отец Матео' and special == 'communication':
+		return 4
+	elif mainCharacterName == 'Отец Матео' and special == 'will':
 		return 5
