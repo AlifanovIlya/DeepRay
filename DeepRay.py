@@ -1,11 +1,11 @@
-import characters
+import characters, rockScissorsPaper
 
 def nextMessage():
 	input_key = input('\n***Что бы увидеть следующее сообщение, нажми клавишу "Enter"***\n')
 
 	while input_key != '':
-		print('\n*** Это какая-то другая клавиша! ***\n')
-		input_key = input('\n*** Что бы увидеть следующее сообщение, нажми клавишу "Enter" ***\n')
+		input_key = input('''\n*** Это какая-то другая клавиша! ***
+\n*** Что бы увидеть следующее сообщение, нажми клавишу "Enter" ***\n''')
 
 
 def main():
@@ -25,20 +25,27 @@ def main():
 	nextMessage()
 
 	mainCharacterName = input('Впиши полное имя персонажа, которого хочешь выбрать\n\n')
-	characterNamesArray = ['Рита Янг',
-	'Карсон Синклер',
-	'Агата Крейн',
-	'Венди Адамс',
-	'Престон Фэрмонт',
-	'Минь Тхи Фанг',
-	'Уильям Йорик',
-	'Отец Матео']
-	while mainCharacterName not in characterNamesArray:
+	characterNamesArray = ['рита янг',
+	'карсон синклер',
+	'агата крейн',
+	'венди адамс',
+	'престон фэрмонт',
+	'минь тхи фанг',
+	'уильям йорик',
+	'отец матео']
+	while mainCharacterName.lower() not in characterNamesArray:
 		mainCharacterName = input('Это не правильное имя, впиши полное имя персонажа, которого хочешь выбрать\n\n')
 
 	print('\nОтлично, а теперь продолжим.\n')
 
-	print(characters.charactersSpecials(mainCharacterName, 'health'))
+	nextMessage()
+
+	print('Перед тобой дверь, ее нужно взломать')
+
+	rockScissorsPaper.game()
+
+
+	
 
 
 if __name__ == '__main__':
