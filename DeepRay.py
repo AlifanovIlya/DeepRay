@@ -1,4 +1,4 @@
-import characters, rockScissorsPaper
+import characters, rockScissorsPaper, guessANumber
 
 def nextMessage():
 	input_key = input('\n***Что бы увидеть следующее сообщение, нажми клавишу "Enter"***\n')
@@ -33,6 +33,7 @@ def main():
 	'минь тхи фанг',
 	'уильям йорик',
 	'отец матео']
+
 	while mainCharacterName.lower() not in characterNamesArray:
 		mainCharacterName = input('Это не правильное имя, впиши полное имя персонажа, которого хочешь выбрать\n\n')
 
@@ -42,7 +43,14 @@ def main():
 
 	print('Перед тобой дверь, ее нужно взломать')
 
-	rockScissorsPaper.game()
+	while rockScissorsPaper.game() != True:
+		rockScissorsPaper.game()
+
+	nextMessage()
+
+	print('Ого,еще одна дверь, ну-ка, взломай и ее.')
+
+	guessANumber.game()
 
 
 	
