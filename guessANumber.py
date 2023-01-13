@@ -1,20 +1,28 @@
 from random import randint
 
+startNumber = randint(1, 100)
+endNumber = randint(110, 10000)
+
+computerNumber = randint(startNumber, endNumber)
+
+def gamerNumber():
+	number = input(f'''Твой противник загадал число между {startNumber} и {endNumber}.
+Тебе нужно его угадать.\n\n''')
+	if number.isdigit() != True:
+		while number.isdigit() != True:
+			print('\nТы вписал что-то не то.\n')
+			number = input(f'''Твой противник загадал число между {startNumber} и {endNumber}.
+Тебе нужно его угадать.\n\n''')
+	return int(number)
+
 def game():
-	startNumber = randint(1, 100)
-	endNumber = randint(110, 10000)
-
-	computerNumber = randint(startNumber, endNumber)
-
-	gamerNumber = input(f'''Твой противник загадалчисло от {startNumber} до {endNumber}.\n
-Тебе нужно его угадать.\n''')
-
-	while gamerNumber != computerNumber:
-		if gamerNumber < startNumber or gamerNumber > endNumber:
-			print('Так нельзя, ты выходишь за рамки!')
-		elif gamerNumber > computerNumber:
-			print('Попробуй число поменьше.')
-		elif gamerNumber < computerNumber:
-			print('попробуй число побольше.')
-
-	print(f'Молодец! Было загалано число {computerNumber}')
+	number = 0
+	while number != computerNumber:
+		number = gamerNumber()
+		if number < startNumber or number > endNumber:
+			print('\nТы выходишь за рамки, так нельзя.\n')
+		elif number < computerNumber:
+			print('\nПопробуй число побольше\n')
+		elif number > computerNumber:
+			print('\nПопробуй число поменьше\n')
+	print(f'\nМолодец, ты угадал! Это было чило {computerNumber}')
