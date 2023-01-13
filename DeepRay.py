@@ -9,7 +9,7 @@ def nextMessage():
 
 
 def main():
-	print('''Ну, здравствуй!
+	print('''\nНу, здравствуй!
 Добро пожаловать в дом ужасов Ха-Ха!
 Ты - сыщик, и тебе надо, кто бы мог подумать, найти!
 А вот, что найти, это ты и узнаешь!''')
@@ -35,20 +35,19 @@ def main():
 	'отец матео']
 
 	while mainCharacterName.lower() not in characterNamesArray:
-		mainCharacterName = input('Это не правильное имя, впиши полное имя персонажа, которого хочешь выбрать\n\n')
+		mainCharacterName = input('\nЭто не правильное имя, впиши полное имя персонажа, которого хочешь выбрать\n\n')
 
-	print('\nОтлично, а теперь продолжим.\n')
+	print('\nОтлично, а теперь продолжим.')
 
 	nextMessage()
 
 	print('Перед тобой дверь, ее нужно взломать')
 
-	while rockScissorsPaper.game() != True:
-		rockScissorsPaper.game()
+	rockScissorsPaper.game()
 
 	nextMessage()
 
-	print('Ого,еще одна дверь, ну-ка, взломай и ее.')
+	print('Ого,еще одна дверь, ну-ка, взломай и ее.\n')
 
 	guessANumber.game()
 
